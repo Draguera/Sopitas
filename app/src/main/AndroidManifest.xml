@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pepe.sopitas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Sopitas"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/appID_Facebook" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".Second_Activity" />
+
+        <activity android:name=".SplashActivity" >
+
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".LogInActivity"></activity>
+    </application>
+
+</manifest>
